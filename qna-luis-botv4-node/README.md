@@ -17,7 +17,7 @@ This sample is meant as a guide (not as a direct download), but instructions bel
 
     <img src="/Assets/bot-secret-location.png">
 
-   The update should look something like this, replacing <TEXT> with your unique values: 
+   The update should look something like this, replacing `<TEXT>` with your unique values: 
      ```
           botFilePath="<YOUR-BOT-FILE-PATH>"
           botFileSecret="<YOUR-BOT-FILE-SECRET>"
