@@ -79,13 +79,14 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
 1. Make sure your beginning and ending values of your `.bot` file are the same as in this sample. They should look like this, with nothing coming after your services array:
 ```json
   {
-  "name": "<YOUR-BOT-NAME>",
-  "padlock": "",
-  "version": "2.0",
-  "services": [
-  ...
-    ]
+    "name": "<YOUR-BOT-NAME>",
+    "padlock": "",
+    "version": "2.0",
+    "services": [
+        ...
+     ]
   }
+  ```
   
 ## Run and test your bot
 ### Connect to bot using Bot Framework Emulator
@@ -115,21 +116,3 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
 ### Project Structure
 
 `index.js` references the bot and starts a Restify server. `bot.js` loads the dialog type you selected when running the generator and adds it as the default dialog. 
-
-### Configuring the bot
-
-Update `.env` with the appropriate keys botFilePath and botFileSecret. 
-  - For Azure Bot Service bots, you can find the botFileSecret under application settings. 
-  - If you use [MSBot CLI](https://github.com/microsoft/botbuilder-tools) to encrypt your bot file, the botFileSecret will be written out to the console window. 
-  - If you used [Bot Framework Emulator **V4**](https://github.com/microsoft/botframework-emulator) to encrypt your bot file, the secret key will be available in bot settings. 
-
-### Running the bot
-
-```
-node ./index.js
-```
-### Developing the bot
-
-```
-nodemon ./index.js
-```
