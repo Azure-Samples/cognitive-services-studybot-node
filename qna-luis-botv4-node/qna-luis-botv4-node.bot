@@ -1,0 +1,93 @@
+{
+  "name": "<YOUR-BOT-NAME>",
+  "padlock": "",
+  "version": "2.0",
+  "services": [
+    {
+      "tenantId": "<YOUR-AUTO-POPULATED-TENANT-ID>",
+      "subscriptionId": "<YOUR-SUBSCRIPTION-ID>",
+      "resourceGroup": "<YOUR-BOT-RESOURCE-GROUP>",
+      "serviceName": "<BOT-NAME>",
+      "type": "abs",
+      "name": "<BOT-NAME>",
+      "id": "1"
+    },
+    {
+      "connectionString": "<YOUR-AUTO-POPULATED-CONNECTION-STRING>",
+      "tenantId": "<YOUR-AUTO-POPULATED-TENANT-ID>",
+      "subscriptionId": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "resourceGroup": "<YOUR-BOT-RESOURCE-GROUP>",
+      "serviceName": "qnaluisbotv4node81f4",
+      "type": "blob",
+      "id": "2"
+    },
+    {
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "type": "endpoint",
+      "name": "development",
+      "id": "3"
+    },
+    {
+      "appId": "<YOUR-BOT-MICROSOFT-APP-ID>",
+      "appPassword": "<YOUR-BOT-MICROSOFT-APP-PASSWORD>",
+      "endpoint": "https://<YOUR-BOT-NAME>.azurewebsites.net/api/messages",
+      "type": "endpoint",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "type": "dispatch",
+      "appId": "<YOUR-LUIS-DISPATCH-APP-ID>",
+      "authoringKey": "<YOUR-LUIS-DISPATCH-APP-AUTHORING-KEY>",
+      "id": "161",
+      "name": "<YOUR-LUIS-APP-NAME>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "version": "Dispatch",
+      "region": "westus",
+      "serviceIds": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "qna",
+      "endpointKey": "<YOUR-QNA-ENDPOINT-KEY>",
+      "hostname": "https://<YOUR-QNA-RESOURCE>.azurewebsites.net/qnamaker",
+      "id": "5",
+      "kbId": "<YOUR-KB-ID>",
+      "name": "<KB-NAME-1>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>"
+    },
+    {
+      "type": "qna",
+      "endpointKey": "<YOUR-QNA-ENDPOINT-KEY>",
+      "hostname": "https://<YOUR-QNA-RESOURCE>.azurewebsites.net/qnamaker",
+      "id": "6",
+      "kbId": "<YOUR-KB-ID>",
+      "name": "<KB-NAME-2>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>"
+    },
+    {
+      "type": "qna",
+      "endpointKey": "<YOUR-QNA-ENDPOINT-KEY>",
+      "hostname": "https://<YOUR-QNA-RESOURCE>.azurewebsites.net/qnamaker",
+      "id": "7",
+      "kbId": "<YOUR-KB-ID>",
+      "name": "<KB-NAME-3>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>"
+    },
+    {
+      "type": "qna",
+      "endpointKey": "<YOUR-QNA-ENDPOINT-KEY>",
+      "hostname": "https://<YOUR-QNA-RESOURCE>.azurewebsites.net/qnamaker",
+      "id": "8",
+      "kbId": "<YOUR-KB-ID>",
+      "name": "<KB-NAME-4>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>"
+    }
+  ]
+}

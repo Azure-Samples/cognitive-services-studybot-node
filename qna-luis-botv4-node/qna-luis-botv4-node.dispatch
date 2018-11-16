@@ -1,0 +1,46 @@
+{
+  "authoringRegion": "westus",
+  "culture": "en-us",
+  "hierarchical": true,
+  "services": [
+    {
+      "kbId": "<YOUR-KB-ID>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "type": "qna",
+      "name": "",
+      "id": "5"
+    },
+    {
+      "kbId": "<YOUR-KB-ID>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "type": "qna",
+      "name": "",
+      "id": "6"
+    },
+    {
+      "kbId": "<YOUR-KB-ID>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "type": "qna",
+      "name": "",
+      "id": "7"
+    },
+    {
+      "kbId": "<YOUR-KB-ID>",
+      "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "type": "qna",
+      "name": "",
+      "id": "8"
+    }
+  ],
+  "serviceIds": [
+    "5",
+    "6",
+    "7",
+    "8",
+  ],
+  "authoringKey": "<YOUR-LUIS-DISPATCH-APP-AUTHORING-KEY>",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "<YOUR-LUIS-DISPATCH-APP-NAME>"
+}
