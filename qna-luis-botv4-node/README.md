@@ -92,9 +92,9 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
 ### Connect to bot using Bot Framework Emulator
 1. Run your bot project by typing `npm start` in your CLI. 
 1. Launch the Bot Framework Emulator. Then  File -> Open Bot Configuration and navigate to your bot project folder to select your `<YOUR-BOT-NAME>.bot` file and it opens in the emulator.
-- When you see something like `[19:15:57]POST 200 conversations.replyToActivity`, your bot is ready to take input.
-- Type any question of your knowledge bases (from any one) and the answer should be returned. 
-- Note: your project must be running in order to use the emulator.
+1. When you see something like `[19:15:57]POST 200 conversations.replyToActivity`, your bot is ready to take input.
+1. Type any question of your knowledge bases (from any one) and the answer should be returned. 
+1. Note: your project must be running in order to use the emulator.
 
 ## Further Reading
 - [Bot Framework Documentation](https://docs.botframework.com)
