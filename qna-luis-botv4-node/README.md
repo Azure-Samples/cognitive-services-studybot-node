@@ -18,10 +18,10 @@ This sample is meant as a guide (not as a direct download), but instructions bel
     <img src="/Assets/bot-secret-location.png">
 
    The update should look something like this, replacing <TEXT> with your unique values: 
- ```
-      botFilePath="<YOUR-BOT-FILE-PATH>"
-      botFileSecret="<YOUR-BOT-FILE-SECRET>"
-  ```
+     ```
+          botFilePath="<YOUR-BOT-FILE-PATH>"
+          botFileSecret="<YOUR-BOT-FILE-SECRET>"
+      ```
   
 1. [Download the Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases) in preparation to test chat queries, locally.
 1. You'll need to [download Ngrok](https://ngrok.com/download) for the emulator. Ngrok has a free version and you don't need to create an account, just download it. If Ngrok is not configured, you'll see a link in your emulator where you can click to configure it.
