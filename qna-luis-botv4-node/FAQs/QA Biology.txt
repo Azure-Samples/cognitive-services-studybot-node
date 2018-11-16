@@ -1,0 +1,27 @@
+Question: Biology
+Answer: Let's study biology! Type in what you want to study, and a definition will be returned. For example, type "virus".
+
+Question: What is a virus?
+Answer: A virus is an infective agent that typically consists of a nucleic acid molecule in a protein coat, is too small to be seen by light microscopy, and can multiply only within the living cells of a host.
+
+Question: What are bacteria?
+Answer: Bacteria are a group of microorganisms that can live in soil, water, or parasites of plants or animals.
+
+Question: What is a parasite?
+Answer: A parasite is an organism that lives in or on an organism of another species (its host) and benefits by deriving nutrients at the other's expense.
+
+Question: What is asexual reproduction?
+Answer: Sexual reproduction is the creation of genetically identical offspring by a single parent.
+
+Question: What is sexual reproduction?
+Answer: Sexual reproduction is a process by which two individuals produce offspring with genetic traits from both parents. It involves the union of gametes.
+
+Question: What is cancer?
+Answer: Cancer is a malignant growth or tumor caused by abnormal and uncontrolled cell division.
+
+Question: What is the blood brain barrier?
+Answer: The blood brain barrier is a filtering mechanism of the capillaries that carry blood to the brain and spinal cord tissue, blocking the passage of certain substances.
+
+
+
+

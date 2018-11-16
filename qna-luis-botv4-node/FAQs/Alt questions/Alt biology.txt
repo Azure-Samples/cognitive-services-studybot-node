@@ -1,0 +1,23 @@
+Question: Biology
+Alt questions: biology, study biology, let's study biology, time for biology, bio
+
+Question: What is a virus?
+Alt questions: virus, bug
+
+Question: What are bacteria?
+Alt questions: bacteria, bug
+
+Question: What is a parasite?
+Alt questions: parasite, bug
+
+Question: What is asexual reproduction?
+Alt questions: asexual, sex, asexual reproduction, reproduction
+
+Question: What is sexual reproduction?
+Alt questions: sexual, sex, sexual reproduction, reproduction
+
+Question: What is cancer?
+Alt questions: cancer, tumor
+
+Question: What is the blood brain barrier?
+Alt questions: blood, blood brain, blood brain barrier, brain

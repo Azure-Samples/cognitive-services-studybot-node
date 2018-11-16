@@ -1,0 +1,22 @@
+Question: Geology
+Answer: Let's study geology! Type in a geology word(s) and a definition will be returned. For example, type "lava".
+
+Question: What is magnitude?
+Answer: Magnitude is the strength of an earthquake.
+
+Question: What is magma?
+Answer: Magma is molten rock that triggers earthquakes and creates volcanoes as it rises within the Earth.
+
+Question: What is a metamorphic rock?
+Answer: A metamorphic rock is a rock formed when another rock is changed by extreme heat or pressure.
+
+Question: What is an era?
+Answer: An era is a subdivision of the geologic time scale.
+
+Question: What is a period?
+Answer: A period is a subdivision of an era.
+
+Question: What is an epoch?
+Answer: An epoch is a subdivision of a period.
+
+

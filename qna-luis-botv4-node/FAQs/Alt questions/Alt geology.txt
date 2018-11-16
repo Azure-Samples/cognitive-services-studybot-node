@@ -1,0 +1,20 @@
+Question: Geology
+Alt questions: geology, let's study geology, time for geology, i want to study geology, study geology, geo
+
+Question: What is magnitude?
+Alt questions: magnitude
+
+Question: What is magma?
+Alt questions: rising lava, lava, hot lava
+
+Question: What is a metamorphic rock?
+Alt questions: metamorphic rock, metamorphic, pressured rock
+
+Question: What is an era?
+Alt questions: era, time
+
+Question: What is a period?
+Alt questions: period, time
+
+Question: What is an epoch?
+Alt questions: epoch, time
