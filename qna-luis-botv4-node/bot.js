@@ -39,15 +39,25 @@ class BasicBot {
         this.conversationState = conversationState;
         this.userState = userState;
 
-        // Add the DISPATCH recognizer.
+        // Get LUIS dispatch app from .bot file
         const dispatchConfig = botConfig.findServiceByNameOrId(DISPATCH_CONFIGURATION);
-        if (!dispatchConfig || !dispatchConfig.appId) throw new Error('Missing DISPATCH configuration. Please follow README.MD to create required DISPATCH applications.\n\n');
+
+        // Create configuration options for LuisRecognizer's runtime behavior.
+        const luisPredictionOptions = {
+            includeAllIntents: true,
+            log: true,
+            staging: false,
+            spellCheck: true,
+            bingSpellCheckSubscriptionKey: dispatchConfig.spellCheckSubscriptionKey 
+        };
+
+        // Add the DISPATCH recognizer.
+        if (!dispatchConfig || !dispatchConfig.appId) throw new Error('Missing DISPATCH configuration. Please follow README.MD to create required DISPATCH application.\n\n');
         this.dispatchRecognizer = new LuisRecognizer({
             applicationId: dispatchConfig.appId,
             endpoint: dispatchConfig.getEndpoint(),
-            // CAUTION: Its better to assign and use a subscription key instead of authoring key here.
             endpointKey: dispatchConfig.authoringKey
-        });
+        }, luisPredictionOptions);
     }
 
     /**
