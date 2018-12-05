@@ -106,6 +106,14 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
 1. Type any question of your knowledge bases (from any one) and the answer should be returned. 
 1. Note: your project must be running in order to use the emulator.
 
+## Redeploy back to Azure
+
+Once your bot works locally, you'll need to publish it back to the Azure portal so other applications can use it from there. This step is required in order to use this Node bot in the Study Bot Node/Express app included in this sample. You can use either Visual Studio or the CLI to publish it back to Azure: 
+* [Publish code using Visual Studio](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-download-source-code?view=azure-bot-service-4.0#publish-code-using-visual-studio)
+* [Publish code using Azure CLI](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-download-source-code?view=azure-bot-service-4.0#publish-code-using-azure-cli)
+    - To use the Azure CLI, be sure to [install it](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) first.
+    - Then make sure you are logged in by executing `az login` before you execute the `az bot publish...` command as shown in the Azure CLI document above.
+
 ## Further Reading
 - [Bot Framework Documentation](https://docs.botframework.com)
 - [Bot basics](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
