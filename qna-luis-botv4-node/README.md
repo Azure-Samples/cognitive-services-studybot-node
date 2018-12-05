@@ -99,7 +99,6 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
   1. Note that the Bing Spell Check subscription key is something added to the "dispatch" type object. If you did not include Bing Spell Check, then there is no need to add that. Just make sure to comment out the Bing Spell Check Code you see in the `bot.js` file. Basically this would be the LuisPredictionOptions object and removing that instance from the LuisRecognizer constructor (the 2nd parrameter).
   
 ## Run and test your bot
-### Connect to bot using Bot Framework Emulator
 1. Run your bot project by typing `npm start` in your CLI. 
 1. Launch the Bot Framework Emulator. Then  File -> Open Bot Configuration and navigate to your bot project folder to select your `<YOUR-BOT-NAME>.bot` file and it opens in the emulator.
 1. When you see something like `[19:15:57]POST 200 conversations.replyToActivity`, your bot is ready to take input.
@@ -107,7 +106,6 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
 1. Note: your project must be running in order to use the emulator.
 
 ## Redeploy back to Azure
-
 Once your bot works locally, you'll need to publish it back to the Azure portal so other applications can use it from there. This step is required in order to use this Node bot in the Study Bot Node/Express app included in this sample. You can use either Visual Studio or the CLI to publish it back to Azure: 
 * [Publish code using Visual Studio](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-download-source-code?view=azure-bot-service-4.0#publish-code-using-visual-studio)
 * [Publish code using Azure CLI](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-download-source-code?view=azure-bot-service-4.0#publish-code-using-azure-cli)
