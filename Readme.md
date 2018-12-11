@@ -21,7 +21,7 @@ These samples create a Study Bot chat client using [QnA Maker](https://docs.micr
 
 1. Visual Studio 2017+
 
-1. Qna-Luis-Botv4 is a Node.js web app bot
+1. Qna-Luis-Botv4 is a Node.js/Express web app bot
 
 ## Resources
 
