@@ -1,9 +1,9 @@
 ---
 topic: sample
 languages: 
-  - node.js
+  - javascript
 services: cognitive-services, qnamaker, chitchat, luis, language-understanding, bot
-products::
+products:
   - azure
 author: wiazur
 ---
