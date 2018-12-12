@@ -1,6 +1,10 @@
 ---
+topic: sample
+languages: 
+  - node.js
 services: cognitive-services, qnamaker, chitchat, luis, language-understanding, bot
-platforms: node.js
+products::
+  - azure
 author: wiazur
 ---
 # Study Bot 
