@@ -2,7 +2,7 @@
 topic: sample
 languages: 
   - javascript
-services: cognitive-services, qnamaker, chitchat, luis, language-understanding, bot
+services: cognitive-services, qnamaker, chitchat, luis, language-understanding, bing spell check, bot
 products:
   - azure
 author: wiazur
