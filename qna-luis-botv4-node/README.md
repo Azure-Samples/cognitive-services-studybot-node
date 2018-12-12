@@ -1,4 +1,4 @@
-# Qna-Luis-Botv4
+# Qna-Luis-Botv4-Node
 
 This sample bot has been created using the [Microsoft Bot Framework](https://dev.botframework.com), in particular, the [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csharp) feature which will "dispatch" user queries in a chat client to the right Microsoft Cognitive Service. In this sample, Dispatch is used to direct the user to [LUIS](https://luis.ai), which then directs the user to the right QnA Maker knowledge bases (FAQs) stored in [qnamaker.ai](https://www.qnamaker.ai/). 
 
@@ -108,9 +108,16 @@ Now that your Dispatch structure is set in your bot and in luis.ai, you only nee
 ## Redeploy back to Azure
 Once your bot works locally, you'll need to publish it back to the Azure portal so other applications can use it from there. This step is required in order to use this Node bot in the Study Bot Node/Express app included in this sample. You can use either Visual Studio or the CLI to publish it back to Azure: 
 * [Publish code using Visual Studio](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-build-download-source-code?view=azure-bot-service-4.0#publish-code-using-visual-studio)
-* [Publish code using Azure CLI](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp)
-    - To use the Azure CLI, be sure to [install it](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) first.
-    - Then make sure you are logged in by executing `az login` before you execute the `az bot publish...` command as shown in the Azure CLI document above.
+* [Publish code using Azure CLI](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp): this article illustrates a lot of steps, but the only ones you need for this sample are...
+    1. Open a command prompt from your project root folder.
+    2. If you have not already, [install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) first.
+    3. Make sure you are logged in by executing `az login`, you will see a browser window open up where you can login.
+    4. Set your Azure subscription ID (the main Azure subscription ID string of characters you have for all your apps, for example: g9b64b36-1f5e-4000-8919-51327f26g6d2):
+    `az account set --subscription "<azure-subscription>"`
+    4. Finally, execute the publish command:
+    `az bot publish --name "<your-azure-bot-name>" --proj-file "<your-proj-file>" --resource-group "<azure-resource-group>" --code-dir "<folder>"`
+    5. You should see a JSON-like confirmation and stats in your command prompt that the publish executed successfully.
+    6. To check that your code made it to Azure, go to your web app bot in Azure and click on Build in the Bot Management section of the menu. Click `Open online code editor` and then check your files in the folder structure.
 
 ## Further Reading
 - [Bot Framework Documentation](https://docs.botframework.com)
