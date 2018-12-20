@@ -62,7 +62,7 @@ After creating your Bing Spell Check v7 resource in the Azure portal, you'll nee
     ```bash
     npm install restify
     ```
-This will install all the packages you need.
+These will install all the packages you need.
 
 ### Create Dispatch service    
 [Dispatch](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch) is a command line tool that will create the Dispatch keys and IDs (.dispatch file), a list of all your LUIS utterances that match your QnA Maker knowledge base questions (.json file), create a new Dispatch app in your LUIS account, and connect all your Cognitive Services to the Dispatch system.
