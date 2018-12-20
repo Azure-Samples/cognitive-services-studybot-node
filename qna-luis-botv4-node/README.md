@@ -123,6 +123,20 @@ Once your bot works locally, you'll need to publish it back to the Azure portal 
     `az bot publish --name "<your-azure-bot-name>" --proj-file "<your-start-up-file: index.js>" --resource-group "<azure-resource-group>" --code-dir "<full-file-path-to-project-folder>"`
     5. You should see a JSON-like confirmation and stats in your command prompt that the publish executed successfully.
     6. To check that your code made it to Azure, go to your web app bot in Azure and click on Build in the Bot Management section of the menu. Click `Open online code editor` and then check your files in the folder structure.
+    
+### Troubleshooting for the Azure Web Chat
+Due to the dispatch commands, it's possible after you publish your code back to Azure that testing in Web Chat won't work, even when your bot works well locally. This is likely due to the app password in your bot being encrypted. If this is the case, changing the app password in your production endpoint should fix it. To do this:
+
+1. In Azure, go to the Resource Group of your bot. You can find this by clicking on your web app bot and finding the Resource Group in the Overview menu.
+1. After clicking on the Resource Group, click the Deployments section under Settings in your menu. You will see a list of all of those resources' apps.
+1. Find your bot in that list, it will have the language of your bot and several characters attached to the end of the title, but your bot's name should be there.
+1. Click on that bot name and a panel will open to the right, horizontal scroll to view it.
+1. A few lines down you will see `Deployment details(Download)`, click on the download link.
+1. Open that downloaded .zip and find the `deployment.json` and open it. 
+1. On about line 49, you'll see an app password. Copy that value.
+1. Go back to your local copy of your bot and open the `.bot` file.
+1. Paste the app password over the `appPassword` in your `production` endpoint object.
+1. Save and publish back to Azure, then refresh your bot and retest your bot in Web Chat. If this does not resolve the issue, put in a support request in Azure.
 
 ## Further Reading
 - [Bot Framework Documentation](https://docs.botframework.com)
