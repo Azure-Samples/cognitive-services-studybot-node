@@ -67,10 +67,11 @@ This will install all the packages you need.
 ### Create Dispatch service    
 [Dispatch](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch) is a command line tool that will create the Dispatch keys and IDs (.dispatch file), a list of all your LUIS utterances that match your QnA Maker knowledge base questions (.json file), create a new Dispatch app in your LUIS account, and connect all your Cognitive Services to the Dispatch system.
 
-1. To connect your LUIS app and QnA Maker knowledge bases to Dispatch, enter the commands below (one line at a time) into your terminal. You can name your Dispatch service anything you'd like, Study-Bot-Dispatch would work well. Your LUIS authoring key is found in the "Settings" menu when you right click on your account name in the upper right of your luis.ai account. Example for region: westus.
+1. To connect your LUIS app and QnA Maker knowledge bases to Dispatch, enter the commands below (one line at a time) into your terminal. You can name your Dispatch service anything you'd like, Study-Bot-Dispatch would work well, just be sure it is not the exact same name as your app in Azure. For example, if your Azure web app bot is named MyNodeBot, pick a slightly different name for your LUIS Dispatch app, such as MyNodeBot-Dispatch. If they are the same, it will cause problems.
+1. Your LUIS authoring key is found in the "Settings" menu when you right click on your account name in the upper right of your luis.ai account. Example for region: westus.
 1. Your QnA Maker KB IDs can be found by going to "My knowledge bases" in qnamaker.ai and clicking the "View code" on the far right side of your knowledge base. Your KB ID is the string of random numbers/letters in the first line. The QnAKey is your QnA Maker key from your resource in Azure, found in the "Keys" section of the menu in your resource. You have two keys, use either one. This is the resource (your Azure QnA service) you used when creating your knowledge bases in qnamaker.ai. 
     ```bash
-    dispatch init -n {DispatchName} --luisAuthoringKey xxxxxxxxxxxxxxxxxxxx --luisAuthoringRegion {LUISauthoringRegion} --culture en-us
+    dispatch init -n {UniqueDispatchName} --luisAuthoringKey xxxxxxxxxxxxxxxxxxxx --luisAuthoringRegion {LUISauthoringRegion} --culture en-us
     dispatch add -t qna -i {kbId1} -k {QnaKey from Azure}
     dispatch add -t qna -i {kbId2} -k {QnaKey from Azure}
     dispatch add -t qna -i {kbId3} -k {QnaKey from Azure}
