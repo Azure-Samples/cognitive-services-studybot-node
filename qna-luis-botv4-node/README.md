@@ -120,7 +120,7 @@ Once your bot works locally, you'll need to publish it back to the Azure portal 
     4. Set your Azure subscription ID (the main Azure subscription ID string of characters you have for all your apps, for example: g9b64b36-1f5e-4000-8919-51327f26g6d2):
     `az account set --subscription "<azure-subscription>"`
     4. Finally, execute the publish command:
-    `az bot publish --name "<your-azure-bot-name>" --proj-file "<your-proj-file>" --resource-group "<azure-resource-group>" --code-dir "<folder>"`
+    `az bot publish --name "<your-azure-bot-name>" --proj-file "<your-start-up-file: index.js>" --resource-group "<azure-resource-group>" --code-dir "<full-file-path-to-project-folder>"`
     5. You should see a JSON-like confirmation and stats in your command prompt that the publish executed successfully.
     6. To check that your code made it to Azure, go to your web app bot in Azure and click on Build in the Bot Management section of the menu. Click `Open online code editor` and then check your files in the folder structure.
 
