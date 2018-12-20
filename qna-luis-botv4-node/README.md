@@ -58,6 +58,10 @@ After creating your Bing Spell Check v7 resource in the Azure portal, you'll nee
     ```bash
     npm i -g msbot chatdown ludown qnamaker luis-apis botdispatch luisgen
     ```
+1. You need the restify package too. NOTE: Don't do `npm install` it may cause conflicts with your `BotService` functions, like `getEndpoint()`.
+    ```bash
+    npm install restify
+    ```
 This will install all the packages you need.
 
 ### Create Dispatch service    
