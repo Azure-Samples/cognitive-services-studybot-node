@@ -44,6 +44,7 @@
       "id": "161",
       "name": "<YOUR-LUIS-APP-NAME>",
       "subscriptionKey": "<YOUR-AZURE-SUBSCRIPTION-KEY>",
+      "spellCheckSubscriptionKey": "<YOUR-BING-SPELL-CHECK-KEY>",
       "version": "Dispatch",
       "region": "westus",
       "serviceIds": [
