@@ -1,0 +1,132 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #666;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Create two columns/boxes that floats next to each other */
+article {
+    border-style: solid;
+    border-width: 2px 1px 1px 2px;
+    border-color: #000080;
+    float: left;
+    width: 30%;
+    height: 350px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    color: #5a8cb1;
+}
+
+    /* Style the title */
+    article ul .title {
+        margin-top: 25px;
+        font-size: 2.3em;
+    }
+
+    article ul .robot img {
+        margin-top: 40px;
+        width: 180px;
+    }
+
+    /* Cancel defaults of the upper left list */
+    article ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+chat-window {
+    border-style: solid;
+    border-width: 2px 2px 1px 1px;
+    border-color: #000080;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    background-color: #5a8cb1;
+    height: 350px;
+}
+
+#webchat {
+    max-height: 270px;
+    margin-bottom: 20px;
+    overflow: auto;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+
+/* Style the footer, the website viewer */
+tabs-container {
+    background-color: #666;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 100%;
+}
+
+.tab {
+    border-style: solid;
+    border-width: 1px 2px 0px 2px;
+    border-color: #000080;
+    background-color: #e7e7e7;
+}
+
+/* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 20px;
+        color: #5a8cb1;
+    }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: inherit;
+    display: none;
+    height: 100vh;
+}
+
+#tab1-window, #tab2-window, #tab3-window {
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: #000080;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    article {
+        width: 100%;
+        height: auto;
+    }
+}

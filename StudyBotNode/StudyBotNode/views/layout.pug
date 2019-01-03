@@ -1,0 +1,14 @@
+﻿doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='https://cdn.botframework.com/botframework-webchat/latest/webchat.js')
+    script
+      include ../routes/index.js
+
+  body
+    block content
