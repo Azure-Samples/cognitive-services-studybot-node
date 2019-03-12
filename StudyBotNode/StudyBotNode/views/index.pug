@@ -27,7 +27,7 @@ block content
         window.WebChat.renderWebChat({ directLine: window.WebChat.createDirectLine({ 
           secret: '<ADD YOUR DIRECTLINE SECRET HERE>' }), 
           styleSet,
-        webSpeechPonyfillFactory: window.WebChat.createBrowserWebSpeechPonyfillFactory()
+          webSpeechPonyfillFactory: window.WebChat.createBrowserWebSpeechPonyfillFactory()
         }, document.getElementById('webchat'));
       })().catch(err => console.error(err));
       
