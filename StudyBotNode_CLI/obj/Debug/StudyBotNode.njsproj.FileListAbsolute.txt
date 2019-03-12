@@ -1,0 +1,2 @@
+C:\Users\v-wiazur\Desktop\StudyBotNode\StudyBotNode\obj\Debug\StudyBotNode.njsproj.CoreCompileInputs.cache
+C:\Users\v-wiazur\Desktop\StudyBotNode\StudyBotNode\bin\Microsoft.NodejsTools.WebRole.dll

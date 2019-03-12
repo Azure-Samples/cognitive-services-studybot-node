@@ -1,0 +1,103 @@
+﻿extends layout
+
+block content
+  
+  article
+    ul
+      li.title Study Bot
+      li.robot
+        img(src='/images/robot-face.jpg' alt='Robot face')
+
+  chat-window
+    #webchat(action='/chat', method='POST')
+    script.
+      const styleSet = window.WebChat.createStyleSet({
+        bubbleBackground: 'rgba(252, 229, 53, 1)',
+        bubbleFromUserBackground: 'rgba(4, 234, 104, 1)',
+        paddingRegular: 10,
+        sendBoxHeight: 50,
+        bubbleMinWidth: 400,
+        bubbleMaxWidth: 700,
+        hideUploadButton: true
+      });
+
+      // Wrap the webchat render in an async
+      (async function () {
+        window.WebChat.renderWebChat({ directLine: window.WebChat.createDirectLine({ 
+          secret: '<ADD YOUR DIRECTLINE SECRET HERE>' }), 
+          styleSet,
+        webSpeechPonyfillFactory: window.WebChat.createBrowserWebSpeechPonyfillFactory()
+        }, document.getElementById('webchat'));
+      })().catch(err => console.error(err));
+      
+      // Add on keypress listener to text input and wait for the user to hit the `enter` key
+      $("input[aria-label='Type your message']").on('keypress', event => {
+
+        // Check if user pressed enter
+        if (event.which === 13) {
+          var inputMessage = $("input[aria-label='Type your message']").val();
+
+          // Identify what subject the query belongs to
+          const kbName1 = "biology";
+          const kbName2 = "geology";
+          const kbName3 = "sociology";
+          const biologyQuestions = new Set(["biology", "virus", "bug", "bacteria", "parasite", "asexual",
+                       "sexual", "sex", "reproduction", "cancer", "tumor", "blood brain barrier"]);
+          const geologyQuestions = new Set(["geology", "magnitude", "magma", "lava", "rock", "metamorphic",
+                                                                "era", "period", "epoch", "time" ]);
+          const sociologyQuestions = new Set(["sociology", "poverty", "minority", "cultural", "pluralism",
+                                     "sterotype", "affirmative action", "apartheid", "bicultural"]);
+
+          // Create subject based on query topic
+          if (biologyQuestions.has(inputMessage)) {
+            if (inputMessage === kbName1) {
+              // don't add a subject if query is already subject word
+              subject = ''; 
+            }
+            else {
+              subject = kbName1;
+            }
+          }
+          else if (geologyQuestions.has(inputMessage)) {
+            if (inputMessage === kbName2) {
+              subject = ''; 
+            }
+            else {
+              subject = kbName2;
+            }
+          }
+          else if (sociologyQuestions.has(inputMessage)) {
+            if (inputMessage === kbName3) {
+              subject = ''; 
+            }
+            else {
+              subject = kbName3;
+            }           
+          }
+          // If query does not belong to a subject, it must be casual conversation (or too many terms to be valid), so no need to search
+          else {
+              inputMessage = '';
+              subject = '';
+          }
+    
+          var wiki = 'https://en.wikipedia.org/w/index.php?search=' + inputMessage + '+' + subject + '&title=Special%3ASearch&go=Go';
+          var encycl = 'https://academic.microsoft.com/#/search?iq=%40' + inputMessage + '%20' + subject + '%40&q=' + inputMessage + '%20' + subject;
+          var newsBlogs = 'https://www.bing.com/search?q=' + inputMessage + '+' + subject;
+
+          document.getElementById('tab1-window').src =  wiki;
+          document.getElementById('tab2-window').src = encycl;
+          document.getElementById('tab3-window').src = newsBlogs;
+        }
+      });
+
+  tabs-container
+    .tab
+      button.tablinks(onclick="openSite(event, 'Encyclopedia')") Encyclopedia
+      button.tablinks(onclick="openSite(event, 'MSAcademic')") Microsoft Academic
+      button.tablinks(onclick="openSite(event, 'NewsBlogs')") News / Blogs
+    #Encyclopedia.tabcontent
+      iframe#tab1-window(src='https://en.wikipedia.org/wiki/')
+    #MSAcademic.tabcontent
+      iframe#tab2-window(src='https://academic.microsoft.com/')
+    #NewsBlogs.tabcontent
+      iframe#tab3-window(src='https://www.bing.com/')
