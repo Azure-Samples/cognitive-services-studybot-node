@@ -21,4 +21,4 @@ npm start
 There will be no search performed for conversational words (like "hi" or "how are you?") or for other phrases/words that are not in your knowledge base. The bot will tell you if it does not understand a query.
 1. To show the flexibility of the bot and how we programmed it, try typing "time" into the webchat. It will return the top three best choices, so in this case, "era", "period", and "epoch" definitions will be returned from the bot. 
 1. To test the Speech service part of the app, click the microphone icon in the webchat and begin speaking. Make sure your browser has the microphone enabled (permissions).
-1. The Speech service will automatically record your voice until you you pause, then it will stop and print what you say in the webchat. When the bot responds, you'll hear it speak as well.
+1. The Speech service will automatically record your voice until you pause, then it will stop and print what you say in the webchat. When the bot responds, you'll hear it speak as well.
