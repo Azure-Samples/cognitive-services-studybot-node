@@ -42,4 +42,4 @@ These samples create a Study Bot chat client using [QnA Maker](https://docs.micr
 * [Azure bot service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
 * [Integrating QnA Maker and LUIS bot v4 tutorial, using Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csharp)
 * [Speech Services Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/)
-* [Bot Framework Web Chat samples](https://github.com/Microsoft/BotFramework-WebChat).
+* [Bot Framework Web Chat samples](https://github.com/Microsoft/BotFramework-WebChat)
