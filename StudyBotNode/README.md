@@ -1,7 +1,7 @@
 # Prerequisites
 
 1. Make sure you have created a [bot](https://github.com/Azure-Samples/cognitive-services-studybot-node/tree/master/qna-luis-botv4-node) using this sample as a guide. 
-1. Download the git URL, then open the solution file locally.
+1. Clone the git URL of this sample, then open the solution file locally.
 1. Since the StudyBotNode app is considered an external client that needs to access the bot in Azure, we'll need to connect it to a Channel called Direct Line. To do this go to the Channels menu in your web app bot resource in Azure and click the globe icon.
 
     <img src="/Assets/enable-directline.png">
@@ -19,7 +19,6 @@
 # Run and Test
     
 1. Once the secret is added, run the solution and watch it open in a browser. For optimal results view in Chrome or Firefox. If you view in Edge or IE, the microphone button will not show (in the lower-right corner of the webchat), but rather you will see a send button.
-
 1. Say hello to your bot, by typing "hi" in the webchat, then press "enter" on your keyboard. It might take a minute for the bot to warm up, so if it says "failed, cannot send", just try typing it again.
 1. Once you see a response, try testing your knowledge bases by typing "virus". A definition for virus should appear, plus if you click on the website tabs below the webchat, you should see a search has automatically been performed for your query. In the query, the study topic has been added to the search so your results are more relevant. For instance, if you searched for "time", instead of getting watches and the like, you will get time in regards to geology (one of the study topics).
 There will be no search performed for conversational words (like "hi" or "how are you?") or for other phrases/words that are not in your knowledge base. The bot will tell you if it does not understand a query.
