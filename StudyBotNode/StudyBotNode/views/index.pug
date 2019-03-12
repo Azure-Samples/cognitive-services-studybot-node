@@ -1,4 +1,4 @@
-﻿extends layout
+extends layout
 
 block content
   
@@ -17,13 +17,19 @@ block content
         paddingRegular: 10,
         sendBoxHeight: 50,
         bubbleMinWidth: 400,
-        bubbleMaxWidth: 700
+        bubbleMaxWidth: 700, 
+        hideUploadButton: true
+
       });
 
-      window.WebChat.renderWebChat({ directLine: window.WebChat.createDirectLine({ 
-      secret: '<YOUR-BOT-DIRECTLINE-SECRET-HERE>' }), 
-      styleSet}, 
-      document.getElementById('webchat'));
+      // Wrap the webchat render in an async
+      (async function () {
+        window.WebChat.renderWebChat({ directLine: window.WebChat.createDirectLine({ 
+          secret: '<ADD YOUR DIRECTLINE SECRET HERE>' }), 
+          styleSet,
+        webSpeechPonyfillFactory: window.WebChat.createBrowserWebSpeechPonyfillFactory()
+        }, document.getElementById('webchat'));
+      })().catch(err => console.error(err));
       
       // Add on keypress listener to text input and wait for the user to hit the `enter` key
       $("input[aria-label='Type your message']").on('keypress', event => {
