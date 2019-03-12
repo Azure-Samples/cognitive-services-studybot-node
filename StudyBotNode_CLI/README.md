@@ -1,4 +1,4 @@
-This sample has the same features as the StudyBotNode app, but is not made for Visual Studio. The Express feartures are still there.
+This sample has the same features as the StudyBotNode app, but is not made for Visual Studio. The Express features are still there.
 
 # Prerequisites
 
@@ -15,7 +15,7 @@ npm i
 ```
 npm start
 ```
-1. You will see it open in the browser, but make sure to run in Chrome or Firefox. Edge and IE will not show the microphone button located in the lower-right corner of your webchat.
+1. You will see it open in a browser, but make sure to run in Chrome or Firefox. Edge and IE will not show the microphone button located in the lower-right corner of your webchat.
 1. Say hello to your bot, by typing "hi" in the webchat, then press "enter" on your keyboard. It might take a minute for the bot to warm up, so if it says "failed, cannot send", just try typing it again.
 1. Once you see a response, try testing your knowledge bases by typing "virus". A definition for virus should appear, plus if you click on the website tabs below the webchat, you should see a search has automatically been performed for your query. In the query, the study topic has been added to the search so your results are more relevant. For instance, if you searched for "time", instead of getting watches and the like, you will get time in regards to geology (one of the study topics).
 There will be no search performed for conversational words (like "hi" or "how are you?") or for other phrases/words that are not in your knowledge base. The bot will tell you if it does not understand a query.
