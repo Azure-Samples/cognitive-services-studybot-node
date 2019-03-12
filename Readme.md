@@ -19,7 +19,7 @@ These samples create a Study Bot chat client using [QnA Maker](https://docs.micr
 
 * **Speech service**: Through the microphone button in the webchat, this sample can do [Speech-to-Text](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text) and [Text-to-Speech](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/text-to-speech). When a user clicks the microphone button and speaks in their mic, the speech will be printed to the webchat and the bot will respond with an answer that is audible and printed in the webchat.
 
-* The web resources (tabs below the webchat) will take a student query, like "virus", and return relevant information about it in an encyclopedia, Microsoft Academic, as well as a general Bing search that returns mostly news and blogs on the query.
+* The web resources (tabs below the webchat) will take a student query, like "virus", automatically from the webchat queries and return relevant information about it in an encyclopedia, Microsoft Academic, as well as a general Bing search that returns mostly news and blogs on the query.
 
 ## Prerequisites
 
