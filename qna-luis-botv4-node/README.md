@@ -7,8 +7,8 @@ The new QnA Maker feature [Chitchat](https://docs.microsoft.com/en-us/azure/cogn
 
 This sample is meant as a guide (not as a direct download), but instructions below show you how to create your own sample with your own Cognitive Service resources to create a Study Bot chat client. 
 
-## Prerequisites - Cognitive Service resources in Azure and websites
-(#prerequisites)
+## (#Prerequisites - Cognitive Service resources in Azure and websites)
+
 1. For this sample you'll need a few Cognitive Service subscriptions from the [Azure Portal](https://ms.portal.azure.com): LUIS, QnA Maker, and Bing Spell Check (optional). If you don't have an Azure account, [create a free Azure account](https://azure.microsoft.com/en-us/free/). General account creation details are here: [Quickstart: Create a Cognitive Services account in the Azure portal](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account). Create these two (or three) Cognitive Service resources before preceding.
 1. The LUIS and QnA Maker Cognitive Services have their own websites, where you will create and manage data. Create accounts in both: [luis.ai](https://www.luis.ai/home) and [qnamaker.ai](https://www.qnamaker.ai).
 
