@@ -1,13 +1,23 @@
 # Qna-Luis-Botv4-Node
 
-[prerequisites]
+[Prerequisites - Cognitive Service resources in Azure and websites](#prerequisites---cognitive-service-resources-in-azure-and-websites)<br>
+[Prerequisites - Azure Bot and Emulator](#prerequisites---azure-bot-and-emulator)<br>
+[Prerequisites - Creating the Cognitive Services: QnA Maker and LUIS](#prerequisites---creating-the-cognitive-services-qna-maker-and-luis)<br>
+[Prerequisites - Creating Dispatch](#prerequisites---creating-dispatch)<br>
+[Prerequisites - Syncing the code](#prerequisites---syncing-the-code)<br>
+[Run and test your bot](#run-and-test-your-bot)<br>
+[Redeploy back to Azure](#redeploy-back-to-azure)<br>
+[Troubleshooting for the Azure Web Chat](#troubleshooting-for-the-azure-web-chat)<br>
+[Further Reading](#further-reading)<br>
+[Dependencies](#dependencies)
+
 This sample bot has been created using the [Microsoft Bot Framework](https://dev.botframework.com), in particular, the [Dispatch](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csharp) feature which will "dispatch" user queries in a chat client to the right Microsoft Cognitive Service. In this sample, Dispatch is used to direct the user to [LUIS](https://luis.ai), which then directs the user to the right QnA Maker knowledge bases (FAQs) stored in [qnamaker.ai](https://www.qnamaker.ai/). 
 
 The new QnA Maker feature [Chitchat](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base) is used as one of the knowledge bases and is integrated into LUIS using the CLI Dispatch tool. Chitchat gives the chat client a more natural, conversational feel when a user chats off-topic, asking questions such as "How are you?", "You're boring", or "Can we be friends?". The bot answers with appropriate responses. There are three different personalities you can set Chitchat to when creating it in [qnamaker.ai](https://www.qnamaker.ai/): The Professional, The Friend, or The Comic. This sample uses The Comic setting, since the Study Bot targets high school students.
 
 This sample is meant as a guide (not as a direct download), but instructions below show you how to create your own sample with your own Cognitive Service resources to create a Study Bot chat client. 
 
-## (#Prerequisites - Cognitive Service resources in Azure and websites)
+## Prerequisites - Cognitive Service resources in Azure and websites
 
 1. For this sample you'll need a few Cognitive Service subscriptions from the [Azure Portal](https://ms.portal.azure.com): LUIS, QnA Maker, and Bing Spell Check (optional). If you don't have an Azure account, [create a free Azure account](https://azure.microsoft.com/en-us/free/). General account creation details are here: [Quickstart: Create a Cognitive Services account in the Azure portal](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account). Create these two (or three) Cognitive Service resources before preceding.
 1. The LUIS and QnA Maker Cognitive Services have their own websites, where you will create and manage data. Create accounts in both: [luis.ai](https://www.luis.ai/home) and [qnamaker.ai](https://www.qnamaker.ai).
