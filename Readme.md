@@ -2,13 +2,14 @@
 page_type: sample
 languages: 
 - javascript
+- nodejs
 products:
 - azure
 - azure-cognitive-services
 description: "These samples create a Study Bot chat client using QnA Maker."
 ---
 
-# Study Bot 
+# Study Bot (Node.js)
 
 This sample has a [StudyBotNode](https://github.com/Azure-Samples/cognitive-services-studybot-node/tree/master/StudyBotNode) app which was created in Visual Studio, and it has a [StudyBotNode_CLI](https://github.com/Azure-Samples/cognitive-services-studybot-node/tree/master/StudyBotNode_CLI) which is the same app but decoupled from Visual Studio and run from the command line. Each app features an embedded bot that you will create in the Azure portal. [Create the bot](https://github.com/Azure-Samples/cognitive-services-studybot-node/tree/master/qna-luis-botv4-node) first, then download one of the Study Bot sample apps to embed your bot into. Follow the readme files for the bot and the apps.
 
